@@ -1,0 +1,384 @@
+.page{
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr fr 1fr;
+    grid-template-areas:
+        "n h h"
+        "n m m"
+        "n m m"
+        "f f f"
+    ;
+    background-color: white;
+}
+.conteneur {
+    margin: auto;
+    display: grid;
+}
+
+#cv {
+
+
+}
+
+
+.cellule {
+    border: solid black 2px;
+    padding: 16px;
+    border-collapse: collapse;
+
+}
+#realisation{
+    padding-right: 5%;
+}
+nav {
+    grid-area: n;
+}
+
+main {
+    grid-area: m;
+}
+
+header {
+    grid-area: h;
+
+}
+
+footer {
+    grid-area: f;
+}
+
+#moi {
+    border: black 2px solid;
+    float: right;
+    
+}
+
+
+#moi {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images//Snapchat-673965862.jpg);
+    width: 30%;
+    height: 320px;
+    border-radius: 10%;
+
+}
+
+nav div {
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+
+    padding: 2px;
+    height: 1280px;
+
+}
+#nLil{
+    height: 600px;
+}
+
+nav {
+    background-color: orange;
+    padding: 0px;
+    border: solid black 2px;
+}
+
+nav div div:hover {
+    width: 80%;
+    background-color: white;
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav div div a {
+    color: black;
+    margin: auto;
+}
+
+.bBlack {
+    border: solid black 2px;
+    padding: 16px;
+}
+
+figure image {
+    height: 128px;
+    width: 64px;
+}
+
+.nostyle {
+    list-style: none;
+}
+
+#info {
+    background-color: aqua;
+    margin-left: 32px;
+
+}
+
+.margin_b {
+    padding-bottom: 128px;
+}
+
+li {
+    padding: 10px 0px;
+}
+
+h1,
+h3 {
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+#ligne_milieux_cv {
+    width: 10px;
+    display: flex;
+    background-color: aqua;
+}
+
+footer {
+    background-color: gray;
+}
+
+body {
+    background-color: grey;
+}
+
+#horraire header {
+    background: lightgray;
+}
+
+.center {
+    display: flex;
+    justify-self: center;
+}
+
+.p_horraire {
+    height: 10%;
+}
+
+#horraire {
+    grid-template-rows: 1fr 7fr 3fr 1fr;
+
+}
+
+#math1 {
+    grid-area: m1;
+    height: 2fr;
+    background-color: blue;
+}
+
+#math2 {
+    grid-area: m2;
+    height: 1fr;
+    background-color: blue;
+}
+
+#math3 {
+    grid-area: m3;
+    height: 2fr;
+    background-color: blue;
+}
+
+#prog1 {
+    grid-area: po1;
+    height: 2fr;
+    background-color: orange;
+}
+
+#prog2 {
+    grid-area: po2;
+    height: 2fr;
+    background-color: orange;
+}
+
+#prog3 {
+    grid-area: po3;
+    height: 2fr;
+    background-color: orange;
+}
+
+#prog4 {
+    grid-area: po4;
+    height: 2fr;
+    background-color: orange;
+}
+
+#philo1 {
+    grid-area: ph1;
+    height: 2fr;
+    background-color: rgb(4, 153, 103);
+}
+
+#philo2 {
+    grid-area: ph2;
+    height: 2fr;
+    background-color: rgb(4, 153, 103);
+}
+
+#exploitation1 {
+    grid-area: ex1;
+    height: 3fr;
+    background-color: lightskyblue;
+}
+
+#exploitation2 {
+    grid-area: ex2;
+    height: 2fr;
+    background-color: lightskyblue;
+}
+
+#francais1 {
+    grid-area: f1;
+    height: 2fr;
+    background-color:magenta;
+}
+
+#francais2 {
+    grid-area: f2;
+    height: 2fr;
+    background-color:magenta;
+}
+
+#web {
+    grid-area: w;
+    height: 3fr;
+    background-color: purple;
+}
+
+#HORRAIRE {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(11,1fr);
+    grid-template-areas:
+        "m1 . ex1 po3 ."
+        "m1 . ex1 po3 ."
+        ".  m2 ex1 . f2"
+        "po1 .  .  . f2"
+        "po1 .  .  .  ."
+        "ph1 po2 . . po4"
+        "ph1 po2 . . po4"
+        ".   f1 . m3 ph2"
+        ".   f1 w m3 ph2"
+        ".    . w .  ex2"
+        ".   .  w . ex2"
+    ;
+    border: solid black 2px;
+    
+    
+}
+#time{
+    float: left;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 97%;
+}
+#time li{
+  
+   
+}
+#HORRAIRE div{
+    margin-bottom: 3px;
+    color:white;
+    border-radius: 5%;
+}
+
+table, tr,td{
+    padding: 24px;
+    border: solid black 2px;
+}
+tr {
+    background-color: gray;
+}
+tr :nth-child(even){
+    background-color: white;
+}
+#galerie div{
+
+   flex-grow: 1;
+
+   
+}
+#kb2{
+    grid-template-rows: 10% 80% 10%;
+
+}
+#galerie img{
+    width: 128px
+    
+}
+#galerie figcaption{
+font-size: 0;
+
+ 
+}
+#galerie figure:hover  figcaption{
+   
+    
+    animation-name: biggerGal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+#galetie figure:hover{
+    animation: dropdown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#galerie div{
+ 
+    flex-direction: column;
+    position: relative;
+
+}
+
+aside{
+    grid-area: a;
+}
+
+#lil_tecca_sujet{
+  
+    float: right;
+    
+}
+.nameAlbum{
+    padding: 0px;
+    margin: 0px;
+    width: 128px;
+}
+#gLil{
+    width: 66%;
+}
+ul{
+    width: fit-content;
+}
+
+
+@keyframes biggerGal {
+    from{    display: none;
+        
+        opacity: 50%;
+       }
+    to{
+        display:block;
+        font-size: small;
+        padding-right: auto;
+        opacity: 100%;
+        flex-basis: 100%;
+       
+    }
+}
