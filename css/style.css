@@ -1,6 +1,6 @@
 .page{
-    grid-template-columns: 1fr 9fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 9fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas:
         "n h h"
         "n m m"
@@ -13,8 +13,20 @@
     margin: auto;
     display: grid;
 }
-
-
+#prof{
+    grid-template-rows: 1fr 14fr;
+}
+#sujet{
+    grid-template-rows: 1fr 4fr;
+}
+#gLil{
+    grid-template-rows: 1fr 10fr;
+    height: 1800px;
+}
+#kb2{
+    grid-template-rows: 1fr 2fr;
+    height: 1300px;
+}
 
 .cellule {
     border: solid black 2px;
@@ -38,6 +50,7 @@ main {
 
 header {
     grid-area: h;
+    height: ;
 
 }
 
