@@ -1,4 +1,4 @@
-.page{
+.page {
     grid-template-columns: 1fr 1fr 9fr;
     grid-template-rows: 1fr 2fr;
     grid-template-areas:
@@ -9,22 +9,32 @@
     ;
     background-color: white;
 }
+
 .conteneur {
     margin: auto;
     display: grid;
 }
-#prof{
+
+#prof {
     grid-template-rows: 1fr 14fr;
 }
-#sujet{
+
+#sujet {
     grid-template-rows: 1fr 4fr;
 }
-#gLil{
+
+#gLil {
     grid-template-rows: 1fr 10fr;
     height: 1800px;
 }
-#kb2{
+
+#kb2 {
     grid-template-rows: 1fr 2fr;
+    height: 1300px;
+}
+
+#Sources {
+    grid-template-rows: 1fr 10fr;
     height: 1300px;
 }
 
@@ -34,9 +44,11 @@
     border-collapse: collapse;
 
 }
-#realisation{
+
+#realisation {
     padding-right: 5%;
 }
+
 nav {
     grid-area: n;
     background-image: linear-gradient(to bottom right, red, yellow);
@@ -50,7 +62,7 @@ main {
 
 header {
     grid-area: h;
-    height: ;
+
 
 }
 
@@ -61,7 +73,7 @@ footer {
 #moi {
     border: black 2px solid;
     float: right;
-    
+
 }
 
 
@@ -84,7 +96,8 @@ nav div {
     height: 1280px;
 
 }
-#nLil{
+
+#nLil {
     height: 600px;
 }
 
@@ -138,10 +151,16 @@ li {
     padding: 10px 0px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     display: inline-block;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
@@ -248,13 +267,13 @@ body {
 #francais1 {
     grid-area: f1;
     height: 2fr;
-    background-color:magenta;
+    background-color: magenta;
 }
 
 #francais2 {
     grid-area: f2;
     height: 2fr;
-    background-color:magenta;
+    background-color: magenta;
 }
 
 #web {
@@ -265,8 +284,8 @@ body {
 
 #HORRAIRE {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(11,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 1fr);
     grid-template-areas:
         "m1 . ex1 po3 ."
         "m1 . ex1 po3 ."
@@ -281,10 +300,11 @@ body {
         ".   .  w . ex2"
     ;
     border: solid black 2px;
-    
-    
+
+
 }
-#time{
+
+#time {
     float: left;
     padding-left: 0px;
     margin-bottom: 0px;
@@ -295,219 +315,274 @@ body {
     height: 1478.48px;
 }
 
-#HORRAIRE div{
+#HORRAIRE div {
     margin-bottom: 3px;
-    color:white;
+    color: white;
     border-radius: 5%;
 }
 
-table, tr,td{
+table,
+tr,
+td {
     padding: 24px;
     border: solid black 2px;
 }
+
 tr {
     background-color: gray;
 }
-tr :nth-child(even){
+
+tr :nth-child(even) {
     background-color: white;
 }
-#galerie div{
 
-   flex-grow: 1;
+#galerie div {
 
-   
+    flex-grow: 1;
+
+
 }
-#kb2{
+
+#kb2 {
     grid-template-rows: 10% 80% 10%;
 
 }
-#galerie img{
-    width: 128px
-    
-}
-#galerie figcaption{
-font-size: 0;
 
- 
+#galerie img {
+    width: 128px
 }
-#galerie figure:hover  figcaption{
-   
-    
+
+#galerie figcaption {
+    font-size: 0;
+
+
+}
+
+#galerie figure:hover figcaption {
+
+
     animation-name: biggerGal;
     animation-duration: 2s;
     animation-fill-mode: forwards
 }
-#galerie div{
- 
+
+#galerie div {
+
     flex-direction: column;
     position: relative;
 
 }
 
-aside{
+aside {
     grid-area: a;
 }
 
-#lil_tecca_sujet{
-  width: 45%;
+#lil_tecca_sujet {
+    width: 45%;
     float: right;
-    
+
 }
-.nameAlbum{
+
+.nameAlbum {
     padding: 0px;
     margin: 0px;
     width: 128px;
 }
-#gLil{
+
+#gLil {
     width: 66%;
 }
-ul{
+
+ul {
     width: fit-content;
 }
 
 
 @keyframes biggerGal {
-    from{    display: none;
-        
+    from {
+        display: none;
+
         opacity: 50%;
-       }
-    to{
-        display:block;
+    }
+
+    to {
+        display: block;
         font-size: small;
-        padding-right: auto;
         opacity: 100%;
         flex-basis: 100%;
-       
+
     }
 }
-#mskLilTecca{
+
+#mskLilTecca {
     width: 35%;
     overflow-y: scroll;
     background: url(../images/Virgo_album_cover.png);
     -webkit-mask-image: radial-gradient(black rgba(255, 255, 255, 0.3));
-    mask-image: radial-gradient(black,rgba(255, 255, 255, 0.3));
-}
-button{
-border: none;
-color:white;
-background-color: limegreen;
-padding: 15px 2%;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-}
- button:hover{
-    color:black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+    mask-image: radial-gradient(black, rgba(255, 255, 255, 0.3));
 }
 
-@media (width < 1200px){
-    .page{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "n n n"
-    "h h h"
-    "m m m"
-    "f f f";
-    
+button {
+    border: none;
+    color: white;
+    background-color: limegreen;
+    padding: 15px 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+}
+
+#sources {
+    list-style: upper-roman;
+}
+
+#sources a {
+    color: red;
+}
+
+@media (width < 1200px) {
+    .page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "n n n"
+            "h h h"
+            "m m m"
+            "f f f";
+
 
     }
-    #cv{
+
+    #cv {
         height: 1700px;
     }
-    #prof{
+
+    #prof {
         height: 2150px;
     }
-    #horraire{
+
+    #horraire {
         height: 1900px;
     }
-    #sujet{
+
+    #sujet {
         height: 1000px;
     }
-   #kb2{
-    height: 800px;
-    grid-template-rows: 10% 10% 70% 10%;
-   }
+
+    #kb2 {
+        height: 800px;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
+
+    #Sources {
+        height: 800px;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
 
     nav div {
 
         flex-direction: row;
         flex-grow: 1;
-        padding: 2px;;
+        padding: 2px;
+        ;
         height: min-content;
     }
+
     nav div div:hover {
         width: 10%;
         background-color: white;
-    
+
     }
-    .margin_b{
+
+    .margin_b {
         margin-bottom: 0px;
         padding: 0px;
     }
-    #nLil{
+
+    #nLil {
         height: fit-content;
     }
-    #gLil{
+
+    #gLil {
         width: 100%;
         height: 1800px;
-        
-}
-#time{
 
-
-    height: 1270px;
-}
-#HORRAIRE div{
-    width: 85%;
-    font-size: smaller;
-    color: black;
-    
-    
-}
-#HORRAIRE{
-    grid-template-columns: repeat(5, 1fr);
-}
     }
 
-    @media(width < 800px){
-        
-        nav {
-
-            background-image: linear-gradient(to bottom right, blue, aqua);
-
-        }
-        #HORRAIRE{
-            grid-template-columns: repeat(5, 110px);
-        }
-        #HORRAIRE div{
-            width: 85%;
-            font-size: smaller;
-            color: black;
-            
-            
-        }
-        #time{
+    #time {
 
 
-            height: 1430px;
-        }
-        #cv{
-            height: 2000px;
-        }
-        #prof{
-            height: 2850px;
-        }
-        #horraire{
-            height: 2150px;
-        }
-        #sujet{
-            height: 1200px;
-        }
-       #kb2{
+        height: 1270px;
+    }
+
+    #HORRAIRE div {
+        width: 85%;
+        font-size: smaller;
+        color: black;
+
+
+    }
+
+    #HORRAIRE {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(width < 800px) {
+
+    nav {
+
+        background-image: linear-gradient(to bottom right, blue, aqua);
+
+    }
+
+    #HORRAIRE {
+        grid-template-columns: repeat(5, 110px);
+    }
+
+    #HORRAIRE div {
+        width: 85%;
+        font-size: smaller;
+        color: black;
+
+
+    }
+
+    #time {
+
+
+        height: 1430px;
+    }
+
+    #cv {
+        height: 2000px;
+    }
+
+    #prof {
+        height: 2850px;
+    }
+
+    #horraire {
+        height: 2150px;
+    }
+
+    #sujet {
+        height: 1200px;
+    }
+
+    #kb2 {
         height: 1000px;
         grid-template-rows: 10% 10% 70% 10%;
-       }
     }
+
+    #Sources {
+        height: 1000px;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
+}
